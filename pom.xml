@@ -466,7 +466,7 @@
                 <version>9.2.0</version>
                 <configuration>
                     <suppressionFiles>
-                        <suppressionFile>publishedSuppressions.xml</suppressionFile>
+                        <suppressionFile>https://github.com/aldanaangel/DependencyCheck/blob/main/supressions/publishedSuppressions.xml</suppressionFile>
                     </suppressionFiles>
                 </configuration>
                 <executions>
