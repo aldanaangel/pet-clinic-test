@@ -463,18 +463,21 @@
             <plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
+                <version>9.2.0</version>
                 <configuration>
-                    <suppressionFile>publishedSuppressions.xml</suppressionFile>
+                    <suppressionFiles>
+                        <suppressionFile>publishedSuppressions.xml</suppressionFile>
+                    </suppressionFiles>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>my.company</groupId>
-                        <artifactId>owasp-suppressions</artifactId>
-                        <version>1.0.5</version>
-                    </dependency>
-                </dependencies>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
-
+            
         </plugins>
     </build>
 
