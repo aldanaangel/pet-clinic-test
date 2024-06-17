@@ -464,7 +464,7 @@
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
                 <configuration>
-                    <suppressionFile>https://github.com/aldanaangel/DependencyCheck/blob/main/supressions/publishedSuppressions.xml</suppressionFile>
+                    <suppressionFile>publishedSuppressions.xml</suppressionFile>
                 </configuration>
                 <dependencies>
                     <dependency>
